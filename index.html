@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Crypto Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Atlas Exchange</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Crypto Dashboard</h1>
 
-  <div class="cards">
-    <div class="card">
-      <h2>Bitcoin</h2>
-      <p>$43,250</p>
-      <span class="up">+2.4%</span>
-    </div>
+  <aside class="sidebar">
+    <h2 class="logo">AtlasEx</h2>
+    <nav>
+      <a class="active">Dashboard</a>
+      <a>Markets</a>
+      <a>Trade</a>
+      <a>Wallet</a>
+      <a>Settings</a>
+    </nav>
+  </aside>
 
-    <div class="card">
-      <h2>Ethereum</h2>
-      <p>$2,320</p>
-      <span class="down">-1.1%</span>
-    </div>
+  <main class="main">
+    <header class="topbar">
+      <h1>Market Overview</h1>
+      <div class="profile">Demo User</div>
+    </header>
 
-    <div class="card">
-      <h2>Solana</h2>
-      <p>$98.40</p>
-      <span class="up">+5.7%</span>
-    </div>
-  </div>
+    <section class="stats">
+      <div class="stat">
+        <p>Total Balance</p>
+        <h2>$12,430.55</h2>
+      </div>
+      <div class="stat">
+        <p>24h P/L</p>
+        <h2 class="up">+$342.21</h2>
+      </div>
+      <div class="stat">
+        <p>Open Trades</p>
+        <h2>5</h2>
+      </div>
+    </section>
 
+    <section class="market">
+      <h2>Top Assets</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Coin</th>
+            <th>Price</th>
+            <th>24h</th>
+            <th>Volume</th>
+          </tr>
+        </thead>
+        <tbody id="market-data"></tbody>
+      </table>
+    </section>
+
+  </main>
+
+<script src="script.js"></script>
 </body>
 </html>
