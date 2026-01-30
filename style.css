@@ -1,0 +1,22 @@
+body {
+  background: #0f172a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+}
+
+.up { color: #22c55e; }
+.down { color: #ef4444; }
